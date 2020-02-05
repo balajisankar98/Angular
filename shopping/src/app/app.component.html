@@ -1,0 +1,7 @@
+<div class="container" >
+    <app-add-shopping (addThisItem)="addItem($event)"></app-add-shopping>
+    
+        <app-shopping  *ngFor="let it of items;let i = index;"  [currentItem]="it" [index]='i'>
+        </app-shopping>
+</div>
+
